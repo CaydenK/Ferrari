@@ -24,7 +24,7 @@ console.log("return:",returnValue);
 ```
 
 
-##集成
+## 集成
 ### iOS
 iOS使用pod方式集成到工程
 pod 暂未加入公有source
@@ -47,7 +47,7 @@ end
 ```
 **要求：所有JSExport的内容（类、方法、参数类型定义）都必须在该文件夹下**
 
-### JS集成
+## JS集成
 iOS会直接将bridge对象注入到window对象，不需要js额外支持。
 
 
@@ -128,8 +128,7 @@ boolean
 
 ## 示例代码
 ```javascript
-canIUse("getQRCode")
-canIUse("getQRCode.needResult")
-canIUse("getNetworkType.return")
-canIUse("goLogin.completion.token")
+ferrari.canIUse('allTypeWithInput')
+ferrari.canIUse('allTypeWithInput.return')
+ferrari.canIUse('allTypeWithInput.inputParam')
 ```
