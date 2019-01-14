@@ -1,0 +1,26 @@
+
+require 'pp'
+#use_frameworks!
+#inhibit_all_warnings!
+
+
+
+platform :ios, '8.0'
+
+target 'Ferrari_Example' do
+  pod 'Ferrari', :path => '../', :subspecs=>['Core','WebP']
+  pod 'YYModel', :inhibit_warnings => true
+  pod 'YYCache', :inhibit_warnings => true
+end
+
+
+post_install do |installer|
+    ferrari_bridge_path = '${PODS_ROOT}/../Ferrari/FRRJSExport'
+    installer.pods_project.targets.each do |target|
+        if target.name == "Ferrari"
+            target.build_configurations.each do |config|
+                config.build_settings['FERRARI_WORK_PATH'] = ferrari_bridge_path
+            end
+        end
+    end
+end

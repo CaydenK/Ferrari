@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>
+        Ferrari
+    </title>
+    <!--    <script src="Ferrari.bundle/ferrari.js"></script>-->
+    <!--    <script src="ferrariExport.js"></script>-->
+
+    <script title="ferrari">
+        var ferrari = window.ferrari;
+        function testAllTypeWithInput() {
+            console.log(ferrari.canIUse('allTypeWithInput'));
+            console.log(ferrari.canIUse('allTypeWithInput.return'));
+            console.log(ferrari.canIUse('allTypeWithInput.inputParam'));
+            console.log(ferrari.canIUse('allTypeWithInput.inputParam.propertyName'));
+            console.log(ferrari.canIUse('allTypeWithInput.completion'));
+            console.log(ferrari.canIUse('allTypeWithInput.completion.property1'));
+
+            var returnValue = ferrari.allTypeWithInput({propertyName:'value1',propertyName1:'value2',phone:'value3'}, (completionString) => {
+                alert(completionString);
+            });
+            console.log(returnValue);
+        }
+        function testSetDiskCache() {
+            ferrari.setDiskCache('shit/abc.html', 'tempKey', 'testDiskValue');
+        }
+        function testGetDiskCache() {
+            alert(ferrari.getDiskCache('shit/abc.html', 'tempKey'));
+        }
+        function testSetMemoryCache() {
+            ferrari.setMemoryCache('tempKey', 'testMemoryValue');
+        }
+        function testGetMemoryCache() {
+            alert(ferrari.getMemoryCache('tempKey'));
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <p>
+        <br /><input type="button" value="demoTest" onclick=testAllTypeWithInput() />
+    </p>
+
+    <p>
+        <br /><input type="button" value="setDiskCache" onclick=testSetDiskCache() />
+        <br /><input type="button" value="getDiskCache" onclick=testGetDiskCache() />
+        <br /><input type="button" value="setMemoryCache" onclick=testSetMemoryCache() />
+        <br /><input type="button" value="getMemoryCache" onclick=testGetMemoryCache() />
+    </p>
+
+    <!-- :head_dom -->
+    <!-- :foot_dom -->
+</body>
+
+
+
+</html>

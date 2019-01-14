@@ -1,0 +1,12 @@
+"NotAuthLocationTip"="您還沒有打開系統定位，趕快去系統設置打開它吧";
+"OK"="好";
+"Hint"="提示";
+"GetLocationAuthTip"="客官，請先開應用啟定位服務";
+"Sure"="確定";
+"Warn"="警告";
+"CannotAccess"="無法訪問";
+"BlockingAccess"="禁止訪問";
+"AreYouSureToOpenThisWebPage"="您確定要跳轉到該網頁嗎？";
+"NotOpen"="不打開";
+"Open"="打開";
+"Back" = "返回";

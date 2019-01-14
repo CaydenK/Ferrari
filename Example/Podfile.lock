@@ -1,0 +1,67 @@
+PODS:
+  - Ferrari/Core (1.0.0):
+    - YYCache
+    - YYModel
+  - Ferrari/WebP (1.0.0):
+    - Ferrari/Core
+    - SDWebImage/WebP
+    - YYCache
+    - YYModel
+  - libwebp (0.6.1):
+    - libwebp/core (= 0.6.1)
+    - libwebp/dec (= 0.6.1)
+    - libwebp/demux (= 0.6.1)
+    - libwebp/dsp (= 0.6.1)
+    - libwebp/enc (= 0.6.1)
+    - libwebp/mux (= 0.6.1)
+    - libwebp/utils (= 0.6.1)
+    - libwebp/webp (= 0.6.1)
+  - libwebp/core (0.6.1):
+    - libwebp/webp
+  - libwebp/dec (0.6.1):
+    - libwebp/core
+  - libwebp/demux (0.6.1):
+    - libwebp/core
+  - libwebp/dsp (0.6.1):
+    - libwebp/core
+  - libwebp/enc (0.6.1):
+    - libwebp/core
+  - libwebp/mux (0.6.1):
+    - libwebp/core
+  - libwebp/utils (0.6.1):
+    - libwebp/core
+  - libwebp/webp (0.6.1)
+  - SDWebImage/Core (4.4.3)
+  - SDWebImage/WebP (4.4.3):
+    - libwebp (~> 0.5)
+    - SDWebImage/Core
+  - YYCache (1.0.4)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - Ferrari/Core (from `../`)
+  - Ferrari/WebP (from `../`)
+  - YYCache
+  - YYModel
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - libwebp
+    - SDWebImage
+    - YYCache
+    - YYModel
+
+EXTERNAL SOURCES:
+  Ferrari:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Ferrari: ca9575e903cc44dbb512ad6e6b8c7a59f1143f41
+  libwebp: 0f01098c6c17175391af621b2f14150f3ca16e16
+  SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: f63834b77f70068a829a99771f35835d2c93a777
+
+COCOAPODS: 1.5.3
