@@ -1,5 +1,6 @@
 # Ferrari简介
----
+
+** 若要使用WKWebView，请先移除URLProtocol的拦截，post 丢 body的问题暂未解决 **
 
 Ferrari框架包含
 为了降低原生方法翻译到js方法，并提供简洁且符合iOS/Android/JS的API风格的API调用方式，所以使用编译脚本/编译时AOP的方式，通过原生方法生成js方法提供调用。
