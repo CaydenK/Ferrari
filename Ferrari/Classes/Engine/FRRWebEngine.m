@@ -162,9 +162,9 @@ NSString * const kFRRConfigUrlVerifyPath      = @"hostPath";
 }
 
 + (void)startEngine {
-//    [NSURLProtocol registerClass:[FRRURLProtocol class]];
-//    [FRRURLProtocol wk_registerScheme:@"https"];
-//    [FRRURLProtocol wk_registerScheme:@"http"];
+    [NSURLProtocol registerClass:[FRRURLProtocol class]];
+    [FRRURLProtocol wk_registerScheme:@"https"];
+    [FRRURLProtocol wk_registerScheme:@"http"];
     UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectZero];
     [webView loadHTMLString:@"" baseURL:nil];       //start web thread
     [self updateUserAngent]; // 更新UA
