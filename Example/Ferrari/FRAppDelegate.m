@@ -43,8 +43,27 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
+    /*
+     manifest.json 格式：
+     
+     {
+         "version": 1547432397,
+         "html": [
+            "https://example.domain.com/demo.html",
+         ],
+         "js": [
+            "https://example.domain.com/demo.js",
+         ],
+         "css": [
+            "https://example.domain.com/demo.css",
+         ],
+         "img": [
+            "https://example.domain.com/demo.png",
+         ]
+     }
+     */
     ///*
-    NSURL *url = [NSURL URLWithString:@"http://10.1.24.58/nginx/shop/js/abc.json"];
+    NSURL *url = [NSURL URLWithString:@"http://example.domain.com/manifest.json"];
     NSMutableURLRequest * request = [[NSMutableURLRequest alloc]initWithURL:url];
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     configuration.requestCachePolicy = NSURLRequestReturnCacheDataDontLoad;
